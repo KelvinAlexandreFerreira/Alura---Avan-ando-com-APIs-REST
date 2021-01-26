@@ -1,5 +1,6 @@
+Cursos Realizados nesta Formação:
+
 Alura - Avançando com APIs REST
 Formação Node.js
 
-Cursos Realizados nesta Formação:
-
+NodeJS: Avançando em APIs REST com controle de versões
