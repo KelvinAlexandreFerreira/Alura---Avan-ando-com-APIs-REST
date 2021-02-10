@@ -2,12 +2,11 @@ const Modelo = require('./ModeloTabelaProdutos')
 const instancia = require('../../../banco-de-dados')
 
 module.exports = {
-    listar(idFornecedor){
+    listar(idFornecedor, criterios = {}){
+        criterios.fornecedor = idFornecedor
         return Modelo.findAll({
-            where: {
-                fornecedor: idFornecedor
-            },
-            raw: true
+            where: criterios,
+                   raw: true
         })
     },
     inserir(dados){
